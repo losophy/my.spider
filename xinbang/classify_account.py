@@ -23,7 +23,7 @@ def ReadAccounts(filename,sheet):
             if field_name == "account":
                 accounts.append(value)
 
-def WriteExcel(filename,sheet):
+def WriteClassification(filename,sheet):
     workbook = load_workbook(filename = filename)
     table = workbook[sheet]
 
@@ -76,6 +76,6 @@ def ClassifyPublicAccount(filename,sheet):
     # for classification in classifications:
     #     print(classification)
 
-    WriteExcel(filename,sheet)
+    WriteClassification(filename,sheet)
 
 ClassifyPublicAccount(u"公众号.xlsx","Sheet1")
