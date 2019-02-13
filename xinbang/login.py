@@ -19,10 +19,10 @@ sleep(1)
 driver.find_element_by_xpath('//*[@id="pwd_confirm"]').click()
 sleep(1)
 
-loginUrl = 'https://www.newrank.cn/public/info/search.html?value=if_fashion888&isBind=false'
+loginUrl = 'https://www.newrank.cn/public/info/detail.html?account=if_fashion888'
 driver.get(loginUrl)
 
-text = driver.find_element_by_xpath('//*[@id="show_0AE34266BC626F9D134FC618776AE30A"]/span[1]').text
+text = driver.find_element_by_xpath('//*[@id="info_detail_head_classify_type"]').text
 print(text)
 
 driver.close()
